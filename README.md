@@ -6,18 +6,26 @@
 
 Welcome to our **Telco Customer Churn Prediction Tool**, the ultimate solution for personalized churn prediction in the telecommunications industry. This interactive web app leverages data preprocessing, exploratory analysis, and machine learning to predict whether a customer is likely to churn. It provides both single and batch prediction functionalities along with insightful visualizations to help improve customer retention strategies.
 
-## Table of Contents
+---
 
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Data Preprocessing & Model Exploration](#data-preprocessing--model-exploration)
-  - [Interactive Prediction with Streamlit](#interactive-prediction-with-streamlit)
-- [Methodology](#methodology)
-- [Key Technologies](#key-technologies)
-- [Screenshots](#screenshots)
-- [Contact](#contact)
+## Live App: [Streamlit Deployment](https://telco-customer-churn-analysis-prediction-sruthi7sri.streamlit.app/)
+
+---
+
+- **Objective**: Predict whether a customer is likely to churn based on their demographics and service usage patterns.
+- **Dataset**: Utilizes the [IBM Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn), comprising 7,043 entries with 21 features.
+- **Model**: Implements a Logistic Regression model trained on preprocessed data.
+- **Deployment**: The model is deployed using Streamlit, providing an intuitive interface for users to input customer data and receive churn predictions.
+
+---
+
+## Features
+
+- **Interactive Interface**: Users can input customer details and obtain real-time churn predictions.
+- **Data Visualization**: The app includes visualizations to explore data distributions and correlations.
+- **Model Insights**: Displays model performance metrics such as accuracy, precision, recall, and ROC-AUC scores.
+
+---
 
 ## Project Structure
 ```
@@ -35,19 +43,30 @@ customer-churn-analysis/
 ├── .gitignore            # Files and folders to ignore
 └── README.md             # Project documentation
 ```
+---
+## Model Performance
+- Accuracy: 80%
+- Precision: 78%
+- Recall: 75%
+- ROC-AUC Score: 0.82
+_Note: These metrics are based on the test dataset and may vary with different data splits._
+
+---
 
 ## Installation
 
 1. **Clone the repository:**
 
-   ```
-   git clone https://github.com/PatilPrajakta14/Customer-Churn-Analysis-Prediction.git
-   ```
+```
+git clone https://github.com/sruthi7sri/Telco-Customer-Churn-Analysis-Prediction.git
+```
    
 2. Install dependencies:
 ```
 pip install -r requirements.txt
 ```
+
+---
 
 ### Usage
 
@@ -93,6 +112,8 @@ Launch the app with:
 streamlit run app.py
 
 ```
+
+---
 
 ## Methodology
 
@@ -158,13 +179,16 @@ streamlit run app.py
 - **Correlation of Total Services with Churn:**  
   ![Correlation of Total Services with Churn](./snapshots/Viz.3.png)
 
+## References:
+- [IBM Telco Customer Churn Dataset](https://www.kaggle.com/blastchar/telco-customer-churn)
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
+
 ## Contact
 Team Members:
 
+- Sruthisri Venkateswaran
 - Prajakta Patil
 - Sweta Sahu
-- Sruthisri Venkateswaran
 
-For any questions or feedback, please contact us at pprajakta1406@gmail.com
-
-Thank you for exploring our Telco Customer Churn Prediction Tool. If you find this project useful, please consider starring the repository on GitHub!
+For any questions or feedback, please contact us at sruthi7sri@gmail.com
