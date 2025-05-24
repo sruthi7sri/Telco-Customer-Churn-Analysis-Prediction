@@ -258,7 +258,7 @@ elif menu == "Visualization":
     # Load Preprocessed Data for visualization
     @st.cache_data
     def load_preprocessed_input_data():
-        return pd.read_csv('encoded_customer_churn_.csv')
+        return pd.read_csv('data/processed/encoded_customer_churn_.csv')
 
     df = load_preprocessed_input_data()
 
