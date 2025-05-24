@@ -8,7 +8,7 @@ import plotly.express as px
 # Loading the model here we are using Linear Regression model from phase 2 as it has the highest accuracy
 @st.cache_data
 def load_ml_model():
-    with open('Telco-Customer-Churn-Analysis-Prediction/models/logistic_regression_model.pkl', 'rb') as file:
+    with open('models/logistic_regression_model.pkl', 'rb') as file:
         return pickle.load(file)
 
 # Loading the scaled values  used to normalize training data for preproccessing the user inputs
