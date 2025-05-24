@@ -14,7 +14,7 @@ def load_ml_model():
 # Loading the scaled values  used to normalize training data for preproccessing the user inputs
 @st.cache_data
 def load_scaler():
-    scaler_filename = 'scaler.pkl'
+    scaler_filename = 'models/scaler.pkl'
     with open(scaler_filename, 'rb') as file:
         return pickle.load(file)
 
